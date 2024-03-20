@@ -250,7 +250,7 @@ Create a user with root role.
 use admin
 
 # Create a user with root role - use a better password
-db.createUser({user: "root", pwd: "supersecret", roles: ["root"]})
+db.createUser({user: "hivemq-listener", pwd: "supersecret", roles: ["root"]})
 ```
 
 Exit from the interactive shell.
@@ -258,7 +258,6 @@ Exit from the interactive shell.
 ```bash
 exit
 ```
-
 
 5. Installing HiveMQ Broker
 
@@ -349,6 +348,13 @@ longhorn-recovery-backend     ClusterIP      10.233.17.68    <none>          950
 longhorn-replica-manager      ClusterIP      None            <none>          <none>         50m
 mongodb                       ClusterIP      10.233.4.235    <none>          27017/TCP      50m
 nginx                         LoadBalancer   10.233.25.248   192.168.1.239   80:30709/TCP   10m
+```
+
+Clean up nginx deployment and service:
+
+```bash
+kubectl delete deployment nginx
+kubectl delete service nginx
 ```
 
 ### Testing the Applications
