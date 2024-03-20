@@ -16,7 +16,7 @@ spec:
         - name: ghcr-login-secret
       containers:
         - name: hivemq-listener-node
-          image: ghcr.io/chrisvfabio/kubernetes-bare-metal/hivemq-listener-node:latest
+          image: ghcr.io/<USERNAME>/<NAMESPACE>/hivemq-listener-node:latest
           imagePullPolicy: Always
           resources:
             limits:

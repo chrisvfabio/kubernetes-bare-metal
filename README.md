@@ -210,8 +210,8 @@ You can now start deploying applications to your Kubernetes cluster. For this de
 Create an Image Pull secret which has the GitHub Packages credentials.
 
 ```bash
-YOUR_GITHUB_USERNAME=chrisvfabio
-YOUR_GITHUB_TOKEN="******"
+YOUR_GITHUB_USERNAME="<USERNAME>"
+YOUR_GITHUB_TOKEN="<GITHUB PAT>"
 
 kubectl create secret docker-registry ghcr-login-secret --docker-server=https://ghcr.io --docker-username=$YOUR_GITHUB_USERNAME --docker-password=$YOUR_GITHUB_TOKEN
 ```

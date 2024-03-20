@@ -30,13 +30,13 @@ cd apps/hivemq-broker
 
 3. Build the container image
 ```bash
-docker build -t ghcr.io/chrisvfabio/kubernetes-bare-metal/hivemq-broker:latest .
+docker build -t ghcr.io/<USERNAME>/<NAMESPACE>/hivemq-broker:latest .
 ```
 
 4. Push the container image to GitHub Packages
 
 ```bash
-docker push ghcr.io/chrisvfabio/kubernetes-bare-metal/hivemq-broker:latest
+docker push ghcr.io/<USERNAME>/<NAMESPACE>/hivemq-broker:latest
 ```
 
 ---
