@@ -1,0 +1,8 @@
+apiVersion: v2
+name: mongodb
+version: 1.0.0
+description: A Helm chart for deploying MongoDB
+dependencies:
+  - name: mongodb
+    version: 14.13.0
+    repository: https://charts.bitnami.com/bitnami

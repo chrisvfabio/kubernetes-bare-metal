@@ -1,0 +1,5 @@
+longhorn:
+  # Settings for single-node clusters.
+  defaultSettings:
+    defaultReplicaCount: 1
+    replicaSoftAntiAffinity: true
